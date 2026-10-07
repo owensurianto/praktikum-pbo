@@ -1,13 +1,6 @@
-# 🍎 Sistem Manajemen Toko Buah - Posttest 2
+# Sistem Manajemen Toko Buah - Posttest 2
 
 ## Deskripsi
-
-Program ini merupakan pengembangan dari **Posttest 1** dengan tema:
-
-> **Sistem Manajemen Toko Buah**
-
-Program dibuat menggunakan bahasa pemrograman **Python** dengan menerapkan konsep **Pemrograman Berorientasi Objek (PBO)**.
-
 Pada Posttest 2, program dikembangkan dengan menambahkan:
 - Relasi UML
   - Association
