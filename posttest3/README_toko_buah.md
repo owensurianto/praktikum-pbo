@@ -48,3 +48,6 @@ Contoh hasil (pesan dapat sedikit berbeda tergantung versi Python):
 TypeError berhasil ditangkap:
 Can't instantiate abstract class Buah with abstract methods tampilkan_asal, tampilkan_data
 ```
+## Output Program
+
+![Output Program](Assets/outout_program.png)

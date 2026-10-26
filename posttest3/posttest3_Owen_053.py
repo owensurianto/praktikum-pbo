@@ -135,14 +135,14 @@ class TokoBuah:
         return transaksi
 
     def tampilkan_buah(self):
-        print("\\n=== DAFTAR BUAH ===")
+        print("\n=== DAFTAR BUAH ===")
         for buah in self.daftar_buah:
             buah.tampilkan_data()
             buah.tampilkan_asal()
             print("--------------------")
 
     def tampilkan_transaksi(self):
-        print("\\n=== DAFTAR TRANSAKSI ===")
+        print("\n=== DAFTAR TRANSAKSI ===")
         for transaksi in self.daftar_transaksi:
             transaksi.tampilkan_transaksi()
             print("--------------------")
@@ -158,7 +158,7 @@ if __name__ == "__main__":
     print("     SISTEM MANAJEMEN TOKO BUAH")
     print("========================================")
 
-    print("\\n=== BUKTI ABSTRACT CLASS ===")
+    print("\n=== BUKTI ABSTRACT CLASS ===")
     try:
         buah_abstrak = Buah("B00", "Contoh", 10000, 5)
     except TypeError as error:
@@ -184,13 +184,13 @@ if __name__ == "__main__":
     toko.tampilkan_transaksi()
 
 
-    print("\\n=== POLIMORFISME VIA PEWARISAN ===")
+    print("\n=== POLIMORFISME VIA PEWARISAN ===")
     for buah in [buah1, buah3]:
         buah.tampilkan_data()
 
-    print("\\n=== DUCK TYPING ===")
+    print("\n=== DUCK TYPING ===")
     cetak_ringkasan(pelanggan1)
     cetak_ringkasan(toko)
 
-    print("\\n=== OPERATOR OVERLOADING ===")
+    print("\n=== OPERATOR OVERLOADING ===")
     print(f"{buah2} lebih murah daripada {buah1}: {buah2 < buah1}")
