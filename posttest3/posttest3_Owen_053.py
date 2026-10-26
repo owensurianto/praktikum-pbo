@@ -1,15 +1,13 @@
 from abc import ABC, abstractmethod
 
-
-# ABSTRACT CLASS
 class Buah(ABC):
     jumlah_buah = 0
 
     def __init__(self, kode, nama, harga, stok):
-        self.__kode = kode          # Private
-        self._nama = nama           # Protected
-        self._harga = harga         # Protected
-        self._stok = stok           # Protected
+        self.__kode = kode
+        self._nama = nama
+        self._harga = harga
+        self._stok = stok
         Buah.jumlah_buah += 1
 
     @property
@@ -38,21 +36,17 @@ class Buah(ABC):
         else:
             print("Stok tidak boleh negatif!")
 
-    # Method konkret: dapat digunakan oleh semua subclass
     def tampilkan_ringkasan(self):
         print(f"{self._nama} | Harga: Rp{self._harga:,} | Stok: {self._stok} kg")
 
-    # Abstract method 1
     @abstractmethod
     def tampilkan_data(self):
         pass
 
-    # Abstract method 2
     @abstractmethod
     def tampilkan_asal(self):
         pass
 
-    # Operator overloading: buah dibandingkan berdasarkan harga
     def __lt__(self, buah_lain):
         if not isinstance(buah_lain, Buah):
             return NotImplemented
@@ -75,7 +69,6 @@ class BuahLokal(Buah):
     def tampilkan_asal(self):
         print(f"Asal daerah: {self.asal_daerah}")
 
-
 class BuahImpor(Buah):
     def __init__(self, kode, nama, harga, stok, negara_asal):
         super().__init__(kode, nama, harga, stok)
@@ -88,7 +81,6 @@ class BuahImpor(Buah):
 
     def tampilkan_asal(self):
         print(f"Negara asal: {self.negara_asal}")
-
 
 class Pelanggan:
     jumlah_pelanggan = 0
@@ -112,7 +104,6 @@ class Pelanggan:
     def tampilkan_ringkasan(self):
         print(f"Pelanggan: {self.nama} | No. HP: {self.nomor_hp}")
 
-
 class Transaksi:
     def __init__(self, pelanggan, buah, jumlah):
         self.pelanggan = pelanggan
@@ -127,7 +118,6 @@ class Transaksi:
         print(f"Buah: {self.buah._nama}")
         print(f"Jumlah: {self.jumlah} kg")
         print(f"Total: Rp{self.hitung_total():,}")
-
 
 class TokoBuah:
     nama_toko = "Fresh Fruit Market"
@@ -160,10 +150,8 @@ class TokoBuah:
     def tampilkan_ringkasan(self):
         print(f"Toko: {self.nama_toko} | Jumlah jenis buah: {len(self.daftar_buah)}")
 
-
 def cetak_ringkasan(objek):
     objek.tampilkan_ringkasan()
-
 
 if __name__ == "__main__":
     print("========================================")

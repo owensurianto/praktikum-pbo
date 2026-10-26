@@ -4,7 +4,7 @@ Program Python ini menerapkan konsep Object-Oriented Programming (OOP): class da
 
 ## Class Diagram UML
 
-![Class Diagram Sistem Manajemen Toko Buah](class_diagram_toko_buah.png)
+![Diagram UML Toko Buah](Assets/uml_toko_buah.png)
 
 Keterangan relasi:
 - **Inheritance**: `BuahLokal` dan `BuahImpor` mewarisi `Buah`.
@@ -37,13 +37,6 @@ Kelas `Buah` mengimplementasikan `__lt__()` agar dua objek buah dapat dibandingk
 - `__kode` pada `Buah` dan `__nomor_hp` pada `Pelanggan` adalah atribut private.
 - `_nama`, `_harga`, dan `_stok` menggunakan konvensi protected.
 - `harga`, `stok`, dan `nomor_hp` disediakan melalui property; harga, stok, dan nomor HP divalidasi saat diubah.
-
-## Cara menjalankan
-Pastikan Python 3 sudah terpasang, lalu jalankan:
-
-```bash
-python sistem_manajemen_toko_buah.py
-```
 
 ## Bukti abstraksi
 Di bagian `=== BUKTI ABSTRACT CLASS ===`, program mencoba menginstansiasi `Buah`. Program menangkap `TypeError` dan menampilkan pesan bahwa abstract class tidak dapat dibuat menjadi objek sebelum seluruh abstract method diimplementasikan.
