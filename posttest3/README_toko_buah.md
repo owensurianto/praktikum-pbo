@@ -15,7 +15,7 @@ Keterangan relasi:
 ## Penerapan konsep OOP
 
 ### 1. Abstract Base Class
-- `Buah` mewarisi `ABC`.
+- `Buah` mewarisi dari `ABC`.
 - `tampilkan_data()` dan `tampilkan_asal()` merupakan abstract method.
 - `BuahLokal` dan `BuahImpor` mengimplementasikan kedua abstract method.
 - `tampilkan_ringkasan()` merupakan method konkret yang diwariskan.
