@@ -50,4 +50,4 @@ Can't instantiate abstract class Buah with abstract methods tampilkan_asal, tamp
 ```
 ## Output Program
 
-![Output Program](Assets/output_program.png)
+![Output Program](Assets/output.png)
